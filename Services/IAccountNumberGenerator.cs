@@ -1,6 +1,9 @@
-﻿namespace ERC.Services
+﻿using AccountService.Repositories;
+
+namespace AccountService.Services
 {
-    public class IAccountNumberGenerator
+    public interface IAccountNumberGenerator
     {
+        Task<string> GenerateAccountNumberAsync();
     }
 }
